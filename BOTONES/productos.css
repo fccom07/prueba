@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    margin: 100px;
+    
+    
+}
+div{
+    background-color: red;
+    opacity: .5px;
+}
+.pestañas{
+    background-color: red;
+   
+
+}
+
+.registro1{
+    color: white;
+    display: inline-block;
+    size: 20px;
+    text-decoration: none;
+    background-color: red;
+    margin: 5px;
+    padding: 5px;
+
+}
+h1{
+    color: white;
+}
+.botones{
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+.botones:hover{
+    background-color: rgba(255, 255, 0, 0.308);
+}
+table{
+    border: 2px;
+}
+td{
+    color: white;
+    padding: 2px;
+}
+.anuncio{
+    color: white;
+}
