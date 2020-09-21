@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
   }
-  
   body {
     font-family: Arial;
     padding: 10px;
@@ -10,7 +9,6 @@
   table{
       border: black;
   }
-  
   /* Header/Blog Title */
   .header {
     padding: 30px;
