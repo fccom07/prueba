@@ -1,51 +1,117 @@
-body{
-    background-color: black;
-    margin-left: 20%;
-    margin-right: 20%;
-    
-    
-}
-div{
-    background-color: red;
-    opacity: .5px;
-}
-.pestañas{
-    background-color: red;
-   
-
-}
-
-.registro1{
-    color: white;
-    display: inline-block;
-    size: 20px;
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #5b627e;
+  }
+  table{
+      border: black;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: #919db7;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .pestaña {
+    overflow: hidden;
+    background-color: #51576e;
+  }
+  
+  /* Style the topnav links */
+  .pestaña a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    background-color: red;
-    margin: 5px;
-    padding: 5px;
+  }
+  
+  /* Change color on hover */
+  .pestaña a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .izquierda {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .derecha {
+    float: left;
+    width: 25%;
+    background-color: #5b627e;
+    padding-left: 20px;
+  }
+  img{
+      position: relative;
+      top: -20px;
 
-}
-h1{
-    color: white;
-}
-.botones{
-    color: white;
-    display: inline-block;
-    font-size: 16px;
-    padding: 5px;
-    text-decoration: none;
-    margin: 10px;
-}
-.botones:hover{
-    background-color: rgba(255, 255, 0, 0.308);
-}
-table{
-    border: 2px;
-}
-td{
-    color: white;
-    padding: 2px;
-}
-.anuncio{
-    color: white;
-}
+  }
+  .log{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+  }
+  
+  /* Fake image */
+  .fimg {
+    background-color: #8471fd36;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .contenedor {
+    background-color: #d2dae7
+    ;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #919db7;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .izquierda, .derecha {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .pestaña a {
+      float: none;
+      width: 100%;
+    }
+  }
