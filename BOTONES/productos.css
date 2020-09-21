@@ -1,6 +1,33 @@
 * {
     box-sizing: border-box;
   }
+  .menuu{
+    overflow: hidden;
+    background-color: #51576e;
+}
+.menuu ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menuu a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.menuu a:hover {
+  background-color: #CC673B;
+}
+.menuu ul li ul {
+  display: none;
+}
+.menuu ul li a:hover + ul, .menuu ul li ul:hover {
+  display: block;
+}
   
   body {
     font-family: Arial;
