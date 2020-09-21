@@ -36,9 +36,8 @@
     background: #5b627e;
   }
   table{
-      border: black;
+    border: black;
   }
-  /* Header/Blog Title */
   .header {
     padding: 30px;
     text-align: center;
@@ -53,7 +52,7 @@
     width: 75%;
   }
   
-  /* Right column */
+  
   .derecha {
     float: left;
     width: 25%;
@@ -71,14 +70,14 @@
       top: 0px;
   }
   
-  /* Fake image */
+  
   .fimg {
     background-color: #8471fd36;
     width: 100%;
     padding: 20px;
   }
   
-  /* Add a card effect for articles */
+  
   .contenedor {
     background-color: #d2dae7
     ;
@@ -87,14 +86,14 @@
     text-align: center;
   }
   
-  /* Clear floats after the columns */
+ 
   .row:after {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Footer */
+  
   .footer {
     padding: 20px;
     text-align: center;
@@ -102,7 +101,7 @@
     margin-top: 20px;
   }
   
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  
   @media screen and (max-width: 800px) {
     .izquierda, .derecha {   
       width: 100%;
@@ -110,7 +109,7 @@
     }
   }
   
-  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  
   @media screen and (max-width: 400px) {
     .pestaña a {
       float: none;
