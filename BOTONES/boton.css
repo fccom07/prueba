@@ -3,33 +3,106 @@
     box-sizing: border-box;
   }
   /* desdes*/
-  .menuu{
-      overflow: hidden;
-      background-color: #51576e;
-  }
-  .menuu ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
+  /**********ale*******/
+
+  .navigation {
     list-style: none;
-}
-.menuu a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-.menuu a:hover {
-    background-color: #CC673B;
-}
-.menuu ul li ul {
-    display: none;
-}
-.menuu ul li a:hover + ul, .menuu ul li ul:hover {
+    padding: 0;
+   
+  }
+  
+  .navigation li:first-child {
     display: block;
-}
+  }
+  .navigation li {
+    display: none;
+  }
+  .navigation a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  .navigation a:hover {
+    color: #000;
+    background-color:#CC673B;
+    font-weight: 700;
+    
+  }
+  
+  .responsive li {
+    display: block;
+  }
+  
+  .submenu a {
+    
+    text-align: right;
+    color: #f2f2f2;
+    width: 300px;
+    
+  }
+  .submenu a:hover {
+    background: #CC673B;
+    
+    
+  }
+  .menuu ul li ul {
+    display: none;
+  }
+  
+  .menuu ul li a:hover + ul, .menuu ul li ul:hover {
+   
+   display: inline-block;
+   
+  }
+  
+  @media only screen and (min-width: 45.5em) {
+    .navigation {
+      display: flex;
+      
+    }
+    .navigation li:first-child {
+      display: none;
+      
+    }
+    .navigation li {
+      display: inline;
+      flex: 1 1 100%;
+      
+      
+    }
+    .navigation li a {
+      color:#f2f2f2;
+      
+    }
+  
+    
+   
+    .submenu a {
+      background: #5b627e;
+      text-align: left;
+      color: #f2f2f2;
+      width: 250px;
+      
+    }
+    .submenu a:hover {
+      background: #CC673B;
+      
+    }
+    .menuu ul li ul {
+      display: none;
+    }
+    
+    .menuu ul li a:hover + ul, .menuu ul li ul:hover {
+     
+     display: inline-block;
+     
+    }
+   
+  }
+
   body {
     font-family: Arial;
     padding: 10px;
@@ -79,8 +152,7 @@
   
   
   .contenedor {
-    background-color: #d2dae7
-    ;
+    background-color: #d2dae7;
     padding: 20px;
     margin-top: 20px;
     text-align: center;
@@ -116,3 +188,6 @@
       width: 100%;
     }
   }
+/***/
+
+
