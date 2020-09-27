@@ -1,17 +1,135 @@
 * {
-    box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+  /* desdes*/
+  /*****************/
+
+  .navigation {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+   
   }
-  .menuu{
-    overflow: hidden;
-    background-color: #51576e;
+  
+  .navigation li:first-child {
+    display: block;
+  }
+  .navigation li {
+    display: none;
+  }
+  .navigation a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  .navigation a:hover {
+    color: #000;
+    background-color:#CC673B;
+    font-weight: 700;
+    
+  }
+  
+  .responsive li {
+    display: block;
+  }
+  
+  .submenu a {
+    
+    text-align: right;
+    color: #f2f2f2;
+    width: 300px;
+    
+  }
+  .submenu a:hover {
+    background: #CC673B;
+    
+    
+  }
+  .menuu ul li ul {
+    display: none;
+  }
+  
+  .menuu ul li a:hover + ul, .menuu ul li ul:hover {
+   
+   display: inline-block;
+   
+  }
+  
+  @media only screen and (min-width: 45.5em) {
+    .navigation {
+      display: flex;
+      
+    }
+    .navigation li:first-child {
+      display: none;
+      
+    }
+    .navigation li {
+      display: inline;
+      flex: 1 1 100%;
+      
+      
+    }
+    .navigation li a {
+      color:#f2f2f2;
+      
+    }
+  
+    
+   
+    .submenu a {
+      background: #5b627e;
+      text-align: left;
+      color: #f2f2f2;
+      width: 250px;
+      
+    }
+    .submenu a:hover {
+      background: #CC673B;
+      
+    }
+    .menuu ul li ul {
+      display: none;
+    }
+    
+    .menuu ul li a:hover + ul, .menuu ul li ul:hover {
+     
+     display: inline-block;
+     
+    }
+   
+  }
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #5b627e;
 }
-.menuu ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #919db7;
 }
-.menuu a {
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+.pestaña {
+  overflow: hidden;
+  background-color: #51576e;
+}
+
+
+.pestaña a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -19,132 +137,129 @@
   padding: 14px 16px;
   text-decoration: none;
 }
-.menuu a:hover {
-  background-color: #CC673B;
+
+
+.pestaña a:hover {
+  background-color: #ddd;
+  color: black;
 }
-.menuu ul li ul {
-  display: none;
+
+
+.izquierda {   
+  float: left;
+  width: 75%;
 }
-.menuu ul li a:hover + ul, .menuu ul li ul:hover {
-  display: block;
+
+
+.derecha {
+  float: left;
+  width: 25%;
+  background-color: #5b627e;
+  padding-left: 20px;
 }
-  
-  body {
-    font-family: Arial;
-    padding: 10px;
-    background: #5b627e;
-  }
-  
-  .header {
-    padding: 30px;
-    text-align: center;
-    background: #919db7;
-  }
-  
-  .header h1 {
-    font-size: 50px;
-  }
-  
- 
-  .pestaña {
-    overflow: hidden;
-    background-color: #51576e;
-  }
-  
-  
-  .pestaña a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
- 
-  .pestaña a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  
-  .izquierda {   
-    float: left;
-    width: 75%;
-  }
-  
-  
-  .derecha {
-    float: left;
-    width: 25%;
-    background-color: #5b627e;
-    padding-left: 20px;
-  }
-  img{
-      float: right;
-      position: relative;
-      top: -20px;
-  }
-  .iz{
-    float: left;
+img{
+    float: right;
     position: relative;
     top: -20px;
+}
+.iz{
+  float: left;
+  position: relative;
+  top: -20px;
 
-  }
-  .log{
-      position: absolute;
-      left: 0px;
-      top: 0px;
-  }
-  
- 
-  .fimg {
-    background-color: #8471fd36;
+}
+.log{
+  float: none;
+
+}
+
+
+.fimg {
+  background-color: #8471fd36;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.contenedor {
+  background-color: #d2dae7;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #919db7;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .izquierda, .derecha {   
     width: 100%;
-    padding: 20px;
+    padding: 0;
   }
-  
- 
-  .contenedor {
-    background-color: #d2dae7;
-    padding: 20px;
-    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 400px) {
+  .pestaña a {
+    float: none;
+    width: 100%;
   }
-  
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
- 
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #919db7;
-    margin-top: 20px;
-  }
-  a{
-    text-decoration: none;
-    text-align: center;
-  }
-  a:hover{
-    background-color: rgba(70, 61, 61, 0.562);
-  }
-  
- 
-  @media screen and (max-width: 800px) {
-    .izquierda, .derecha {   
-      width: 100%;
-      padding: 0;
-    }
-  }
-  
-  
-  @media screen and (max-width: 400px) {
-    .pestaña a {
-      float: none;
-      width: 100%;
-    }
-  }
+}
+/*relooooooooooj*/
+.wrap {
+  width: 100%;
+  max-width: 90%;
+}
+
+.widget {
+  width: 100%;
+  margin: 1em;
+}
+
+.widget p {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.fecha {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+  text-align: center;
+  font-size:1.5em;
+  margin-bottom: 0.3125rem;
+  background: rgba(0, 0, 0, 0);
+  padding: 0.1%;
+  width: 100%;
+}
+
+.reloj {
+  font-family: Oswald, Arial;
+  width: 100%;
+  padding: 0%;
+  font-size: 3em;
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+}
+
+.reloj .caja-segundos {
+  display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+  font-size: 1.5rem;
+  display: block;
+}
+
+

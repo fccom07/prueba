@@ -1,9 +1,12 @@
-
 * {
-    box-sizing: border-box;
-  }
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
   /* desdes*/
-  /**********ale*******/
+  /*****************/
 
   .navigation {
     list-style: none;
@@ -138,9 +141,7 @@
 
   }
   .log{
-      position: absolute;
-      left: 0px;
-      top: 0px;
+    float: none;
   }
   
   
@@ -189,5 +190,49 @@
     }
   }
 /***/
+/*relooooooooooj*/
+.wrap {
+  width: 100%;
+  max-width: 90%;
+}
+
+.widget {
+  width: 100%;
+  margin: 1em;
+}
+
+.widget p {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.fecha {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+  text-align: center;
+  font-size:1.5em;
+  margin-bottom: 0.3125rem;
+  background: rgba(0, 0, 0, 0);
+  padding: 0.1%;
+  width: 100%;
+}
+
+.reloj {
+  font-family: Oswald, Arial;
+  width: 100%;
+  padding: 0.1%;
+  font-size: 4em;
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+}
+
+.reloj .caja-segundos {
+  display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+  font-size: 2rem;
+  display: block;
+}
 
 
