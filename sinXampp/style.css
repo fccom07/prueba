@@ -1,0 +1,12 @@
+.menu{
+	width: 15%;
+	float: left;
+}
+.cuerpo{
+	width: 85%;
+	display: inline-block;
+}
+.ejercicio7{
+	color:"yellow";
+	background-color: "black";
+}
